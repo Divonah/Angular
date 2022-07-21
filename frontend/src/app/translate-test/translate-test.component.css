@@ -1,0 +1,133 @@
+/* Title */
+.titletop {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.title1 {
+  position: absolute;
+  transform: translate(-50, -50);
+  left: 35%;
+  top: 5%;
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(3, 64, 207);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.leftTitle {
+  position: absolute;
+  top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  color: rgb(3, 64, 207);
+  margin-left: 30px;
+}
+
+/* Dropdown for Project */
+.headingArea {
+  width: 100%;
+  height: 2%;
+  background-color: #f4f6f6;
+}
+.headingArea select {
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 20%;
+  height: 30px;
+  background-color: #fff;
+}
+.content-body {
+  background-color: #f4f6f6;
+  justify-content: space-between;
+  display: flex;
+}
+.mainchart {
+  margin: 15px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 40%;
+  height: 100%;
+  border-radius: 10px;
+}
+.side-chart {
+  margin: 15px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  border-radius: 10px;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+
+/* progress-bar */
+.progressbar {
+  position: absolute;
+  width: 110vh;
+  height: 10vh;
+  transform: translate(-50, -50);
+  left: 5%;
+  top: 5%;
+}
+  .circles {
+    height: 0.938em;
+    width: 0.938em;
+    border: 0.188em solid #000;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active {
+    background-color: #ffa500;
+  }
+  
+  .circle-desc-active {
+    font-weight: bold;
+  }
+  
+  .bar {
+    width: 14%;
+    height: 0.063em;
+    margin-bottom: 0.469em;
+    border: 0.031em solid #000;
+    color: #000;
+    background-color: #000;
+    display: inline-block;
+    margin: "0 auto";
+  }
+  
+  .circle-desc {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: -2.5%;
+    min-width: 320px;
+  }
+  
+.chart1 {
+    width: 50%;
+}
+.chart2 {
+    width: 50%;
+}
+
+
+/* Stackchart */
+.section2 {
+    background-color: #f4f6f6;
+  }
+.stackchart {
+    margin: 0 15px;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+  

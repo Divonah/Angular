@@ -1,0 +1,148 @@
+<p-toast d></p-toast>
+
+
+<p-table [value]="projectdetails" dataKey="name" style="position: static">
+    <!-- Caption -->
+    <ng-template pTemplate="caption">
+        <div style="display: flex; justify-content: space-between">
+            <div>
+                <h2>Project Details</h2>
+                <h2>{{message}}</h2>
+            </div>
+            <!-- <p-messages [(value)]="msgs" [enableService]="false"></p-messages> -->
+            <div>
+                <p-button label="Create Project" icon="pi pi-plus" iconPos="right" style="margin-right: 20px">
+                </p-button>
+                <p-button (click)="showDialog()" label="File Upload" icon="pi pi-file-o" iconPos="right">
+                </p-button>
+                <p-dialog [modal]="true" [resizable]="true" header="Upload File" [(visible)]="displayBasic"
+                    [style]="{width: '50vw'}">
+                    <form>
+                    <label class="custom-file-upload">
+                        <input type="file" accept=".zip" class="upload" (change)="upload($event)" multiple> 
+                        <i class="pi pi-cloud-upload" style="font-size: 1.3rem;"> Custom Upload </i>
+                    </label>
+                    <b> {{filename}}</b>
+                    <input type="submit" (click)="updated()" class="submit" pInputText [disabled]=isDisabled/>
+                    </form>
+                </p-dialog>
+            </div>
+        </div>
+    </ng-template>
+    <!-- Header-->
+    <ng-template pTemplate="header">
+        <tr>
+            <th></th>
+            <th pSortableColumn="name">
+                Name
+                <p-sortIcon field="name"></p-sortIcon>
+                <p-columnFilter type="text" field="name" display="menu"></p-columnFilter>
+            </th>
+            <th pSortableColumn="version">
+                Version
+                <p-sortIcon field="version"></p-sortIcon>
+                <p-columnFilter type="text" field="version" display="menu"></p-columnFilter>
+            </th>
+            <th pSortableColumn="finaldelivery">
+                FinalDelivery <p-sortIcon field="finaldelivery"></p-sortIcon>
+                <p-columnFilter type="text" field="finaldelivery" display="menu"></p-columnFilter>
+            </th>
+            <th pSortableColumn="editorial">
+                Editorial <p-sortIcon field="editorial"></p-sortIcon>
+                <p-columnFilter type="number" field="editorial" display="menu"></p-columnFilter>
+            </th>
+            <th pSortableColumn="status">
+                Status <p-sortIcon field="status"></p-sortIcon>
+                <p-columnFilter type="text" field="status" display="menu"></p-columnFilter>
+            </th>
+            <th pSortableColumn="translation">
+                Translation<p-sortIcon field="translation"></p-sortIcon>
+                <p-columnFilter type="text" field="translation" display="menu"></p-columnFilter>
+            </th>
+            <th pSortableColumn="translation">
+                Actions<p-sortIcon field="translation"></p-sortIcon>
+                <p-columnFilter type="text" field="translation" display="menu"></p-columnFilter>
+            </th>
+        </tr>
+    </ng-template>
+
+    <!-- Body of table-->
+    <ng-template pTemplate="body" let-project let-expanded="expanded">
+        <tr>
+            <td>
+                <button type="button" pButton pRipple [pRowToggler]="project"
+                    class="p-button-text p-button-rounded p-button-plain"
+                    [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></button>
+            </td>
+            <td value="project.name">{{ project.name }}</td>
+            <td>{{ project.version }}</td>
+            <td>{{ project.finaldelivery }}</td>
+            <td>
+                <p-progressBar [value]="project.editorial"></p-progressBar>
+                <small style="float: right"> {{ project.editorial }}</small>
+            </td>
+            <td>
+                <p-progressBar [value]="project.status"></p-progressBar>
+                <ng-template [ngIf]="project.status >= 50">
+                    <small style="float: right"> Projected Updated</small>
+                </ng-template>
+                <ng-template [ngIf]="project.status < 50">
+                    <small style="float: right"> Projected Created</small>
+                </ng-template>
+            </td>
+            <td>{{ project.translation }}</td>
+            <td>
+                <a (click)="getProjectTitle(project)" class="status-btn">
+                    View Status
+                </a>
+            </td>
+        </tr>
+    </ng-template>
+
+    <!-- Row expansion-->
+    <ng-template pTemplate="rowexpansion" let-project>
+        <tr>
+            <td colspan="8">
+                <div class="p-p-3">
+                    <p-table [value]="projectnamearray" dataKey="name">
+                        <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 17rem"></th>
+            <th pSortableColumn="languagecode">
+                Language <p-sortIcon field="languagecode"></p-sortIcon>
+            </th>
+            <th pSortableColumn="translationcount">
+                TranslationCount
+                <p-sortIcon field="translationcount"></p-sortIcon>
+            </th>
+            <th pSortableColumn="translationstatus">
+                TranslationRequest
+                <p-sortIcon field="translationstatus"> </p-sortIcon>
+            </th>
+            <th style="width: 25rem"></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-languagedetails>
+        <tr>
+            <td></td>
+            <td>{{ languagedetails.languagecode }}</td>
+            <td>{{ languagedetails.translationcount }}</td>
+            <td>{{ languagedetails.translationstatus }}</td>
+            <td></td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<!-- Add two value  -->
+<div class="addSum">
+    
+    Number 1 :
+    <input type="number" id="num1" class="num1" [(ngModel)]="num1">
+    
+    Number 2:
+    <input type="number" id="num2" class="num2" [(ngModel)="num2">
+
+    <button (click)="sum()">Submit</button>
+
+    <p>Sum of the values {{total}} </p>
+</div>

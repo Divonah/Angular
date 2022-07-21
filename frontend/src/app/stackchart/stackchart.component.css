@@ -1,0 +1,47 @@
+.content-body{
+    justify-content: space-between;
+    display: flex;
+
+}
+.mainchart{
+    width: 40%;
+    height: 100%;
+
+}
+
+.side-chart{
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.dashboard{
+    position: relative;
+}
+.stacked_bar{
+    width:100%;
+    margin-bottom: 2%;
+    display: flex;
+    height: 500px;
+}
+
+.mainstack{
+    width:50%;
+
+}
+.piestack{
+    width:50%;
+
+}
+.content-piestack{
+    height: 100%;
+    width: 65%;
+   margin-left: 20%;
+}
+
+.chart1{
+    width: 50%;
+}
+.chart2{
+    width: 50%;
+}

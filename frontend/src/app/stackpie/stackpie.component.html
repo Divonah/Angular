@@ -1,0 +1,8 @@
+<div class="content-piestack" *ngIf="edited">
+    <div class="myTitle">
+        <h3
+            style="color: rgb(3,64,207);margin-top: 3%;margin-left:10%;position: absolute;font-weight: bold;font-family: sans-serif;">
+            {{pieTitle.toUpperCase()}}</h3>
+    </div>
+    <canvas baseChart [data]="stackpie" [type]="'pie'" [options]="chartOptions_stackpie"></canvas>
+</div>

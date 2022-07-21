@@ -1,0 +1,43 @@
+<div class="content" style="margin-top: 1%">
+  <div class="newTitle">
+    <div class="titletop">
+      <div class="title1">Translate Status - Language and Quality</div>
+      <div class="leftTitle">{{ valuePie }} Translate</div>
+    </div>
+
+    <div class="headingArea">
+      <select (change)="select_pie($event)">
+        <option>{{ this.valuePie }}</option>
+        <option *ngFor="let i of projectname" value="{{ i }}">{{ i }}</option>
+      </select>
+    </div>
+
+    <div class="content-body">
+      <div class="mainchart" style="margin-top: 1%">
+        <app-overallchart></app-overallchart>
+      </div>
+      <div class="side-chart">
+        <div class="progressbar">
+          <span *ngFor="let item of counts; let i = index">
+            <span class="circle-desc" [class.circle-desc-active]="orderStatus == item">{{ item }}</span>
+            <span class="circles" [class.active]="orderStatus == item"></span>
+            <span class="bar" *ngIf="i != counts.length - 1"></span>
+          </span>
+        </div>
+
+        <div class="chart1">
+          <app-de-translation-chart></app-de-translation-chart>
+        </div>
+        <div class="chart2">
+          <app-quality-translation-chart></app-quality-translation-chart>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="stackchart">
+        <app-stackchart></app-stackchart>
+      </div>
+    </div>
+  </div>
+</div>

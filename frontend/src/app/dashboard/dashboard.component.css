@@ -1,0 +1,29 @@
+/* Status Button - Action Column */
+.status-btn {
+    cursor: pointer;
+    padding: 5px 13px;
+    border-radius: 4px;
+    background-color: rgb(13, 137, 236);
+    color: white;
+}
+/* Updated button */
+.submit{
+    float: right;
+    margin-top: 7%;
+    cursor: pointer;
+    padding: 5px 13px;
+    border-radius: 4px;
+    background-color: rgb(13, 137, 236);
+    color: white;
+}
+
+.custom-file-upload{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: black;
+}
+input[type="file"] {
+    display: none;
+}

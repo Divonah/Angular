@@ -1,0 +1,156 @@
+{
+	"data": [
+		{
+			"name": "HMIL-VW",
+			"version": 1,
+			"finaldelivery": "01/06/2022",
+			"editorial": 560,
+			"status": "Project Creation",
+            "translationrequest": "None",
+            "languagedetails":[
+                {
+                    "languagecode": "en-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "GB-de",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "fe-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "JB-en",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                }
+            ]
+		},
+        {
+			"name": "MIB 1",
+			"version": 2,
+			"finaldelivery": "08/02/2022",
+			"editorial": 560,
+			"status": "Project Creation",
+            "translationrequest": "4",
+            "languagedetails": [
+                {
+                    "languagecode": "en-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                    
+                },
+                {
+                    "languagecode": "GB-de",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "fe-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "JB-en",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                }
+               
+            ]
+		},
+        {
+			"name": "MIB 1",
+			"version": 1,
+			"finaldelivery": "01/06/2022",
+			"editorial": 560,
+			"status": "Project Creation",
+            "translationrequest": "20",
+            "languagedetails": [
+                {
+                    "languagecode": "en-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                    
+                },
+                {
+                    "languagecode": "GB-de",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+            
+                {
+                    "languagecode": "JB-en",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                }
+               
+            ]
+		},
+        {
+			"name": "SuperHMI_X",
+			"version": 1,
+			"finaldelivery": "01/06/2022",
+			"editorial": 560,
+			"status": "Project Creation",
+            "translationrequest": "None",
+            "languagedetails": [
+                {
+                    "languagecode": "en-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                    
+                },
+                {
+                    "languagecode": "GB-de",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "fe-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                }
+               
+               
+            ]
+		},
+        {
+			"name": "HMIL-VW",
+			"version": 1,
+			"finaldelivery": "01/06/2022",
+			"editorial": 560,
+			"status": "Project Creation",
+            "translationrequest": "None",
+            "languagedetails": [
+                {
+                    "languagecode": "en-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                    
+                },
+                {
+                    "languagecode": "GB-de",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "fe-GB",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                },
+                {
+                    "languagecode": "JB-en",
+                    "translation": 720,
+                    "translationgraph": "In progress"
+                }
+               
+            ]
+		}
+		
+		
+	]
+}

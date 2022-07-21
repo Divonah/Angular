@@ -1,0 +1,51 @@
+/* Main*/
+.piechart {
+  width: 100%;
+  min-height: 100%;
+  margin-top: -1px;
+  background-color: rgb(238, 238, 238);
+}
+/* Heading */
+.heading {
+    background-color: #ffff;
+  }
+
+.heading-text {
+    padding: 17px;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(3, 64, 210);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* Content */
+.content {
+  display: flex;
+  height: 70vh;
+}
+.content-body-left {
+  width: 50%;
+  margin: 0 10px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.content-body-right {
+  width: 50%;
+  margin: 0 10px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bottom {
+  margin: 15px 15px;
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+  margin-bottom: 5%;
+}

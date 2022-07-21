@@ -1,0 +1,10 @@
+<div class="stacked_bar">
+  <div class="mainstack">
+    <canvas height="500" (chartClick)="chartClicked($event)" baseChart [data]="stacked_bar_project"
+      [options]="chartOptions_stack" [type]="'bar'">
+    </canvas>
+  </div>
+  <div class="piestack">
+    <app-stackpie></app-stackpie>
+  </div>
+</div>

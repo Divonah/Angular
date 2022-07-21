@@ -1,0 +1,89 @@
+
+<!-- <router-outlet></router-outlet>
+<app-table></app-table> -->
+
+<div class="dashboard">
+
+    <!-- Navigation bar -->
+    <div class="nav">
+        <div class="nav-content">
+            <div class="nav-left">
+                <div class="nav-left-left">
+                    <div class="logo-card">
+                        <h4 class="logo">PrimeNG</h4>
+                    </div>
+                </div>
+                <div class="nav-left-right">
+                    <div class="title-card">
+
+                        <h4 class ="title" *ngIf=" getUrl()">                           
+                            Chart Details
+                         </h4>
+                         <h4 class ="title" *ngIf=" isHomeRoute()">                           
+                           Dashboard
+                         </h4>
+                         <h4 class ="title" *ngIf=" getOverallUrl()">                           
+                            Overall status
+                          </h4>
+                          <h4 class ="title" *ngIf=" getDashboardUrl()">                           
+                            Dashboard
+                          </h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav-middle">
+                <div class="megamenu">
+                    <p-megaMenu [model]="items" styleClass="mega"></p-megaMenu>
+                </div>
+            </div>
+            <div class="nav-right">
+    
+                <button pButton pRipple type="button" icon="pi pi-search" class="p-button-rounded p-button-success p-button-text" style="color: white;">
+                </button>
+    
+                <button pButton pRipple type="button" icon="pi pi-bell" class="p-button-rounded p-button-warning p-button-text" style="color: white;">
+                </button>
+    
+                <button pButton pRipple type="button" icon="pi pi-user" class="p-button-rounded p-button-info p-button-text" style="color: white;">
+                </button>
+    
+            </div>
+    
+            <div>
+                <button pButton pRipple type="button" label="Logout" class="p-button-danger p-button-text" icon="pi pi-sign-out" style="color: white; ">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+     
+        <span *ngIf="  isHomeRoute()">
+
+             <app-dashboard></app-dashboard>
+        </span>
+
+        
+        <router-outlet></router-outlet>
+      </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-menu">
+                <a href="#">Contact</a>
+                <a href="#">Customer Support</a>
+                <a href="#">Products</a>
+                <a href="">companyname.com</a>
+            </div>
+            <div class="info">
+                Confidential
+            </div>
+            <div class="copyright">
+                &copy; 2021 . All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</div>
